@@ -10,7 +10,7 @@ A visually rich and interactive walkthrough showcasing how **MCP (Memory-Context
 
 ### ✅ Why was MCP developed?
 
-Traditional LLMs, even the most advanced ones, treat every query as stateless. They forget prior conversation turns unless they’re passed again, and they fail to truly "reason" over time.
+Traditional LLMs, even the most advanced ones, treat every query as stateless. They forget prior conversation turns unless they're passed again, and they fail to truly "reason" over time.
 
 MCP was developed to:
 
@@ -18,7 +18,7 @@ MCP was developed to:
 * Preserve a **timeline of decisions** and model responses
 * Maintain **semantic and logical continuity** over a session
 
-Imagine working with an AI that doesn’t forget — that remembers your goal from turn 1, understands how turn 4 affects turn 7, and adjusts its logic based on what’s already occurred. That’s MCP.
+Imagine working with an AI that doesn't forget — that remembers your goal from turn 1, understands how turn 4 affects turn 7, and adjusts its logic based on what's already occurred. That's MCP.
 
 > Think of MCP as a living memory layer for AI — like a whiteboard the model updates and reasons with across time.
 
@@ -26,14 +26,14 @@ Imagine working with an AI that doesn’t forget — that remembers your goal fr
 
 ## 🤔 Why this demo?
 
-We needed a way to demonstrate how powerful MCP’s persistent memory and logical continuity can be — especially in situations where history affects future decisions.
+We needed a way to demonstrate how powerful MCP's persistent memory and logical continuity can be — especially in situations where history affects future decisions.
 
-Enter **Codenames**: a game of clues, guesses, and progressive team reasoning. It’s the perfect metaphor.
+Enter **Codenames**: a game of clues, guesses, and progressive team reasoning. It's the perfect metaphor.
 
 In a non-MCP system, the AI:
 
 * Forgets previous clues
-* Can’t evaluate the game board’s evolving state
+* Can't evaluate the game board's evolving state
 * Makes isolated, non-contextual suggestions
 
 With **MCP**, the AI:
@@ -75,23 +75,18 @@ This demo visually and interactively shows that transformation.
 
 ---
 
-## 🔍 MCP vs Non-MCP Systems
+## 🚦 MCP Toggle: Compare Modes
 
-| Capability              | Without MCP                    | With MCP                            |
-| ----------------------- | ------------------------------ | ----------------------------------- |
-| Track history           | ❌ Remembers only current input | ✅ Persistent multi-turn memory      |
-| Logical progression     | ❌ Clues treated as isolated    | ✅ Clues build on prior logic        |
-| Mistake recovery        | ❌ Ignores past missteps        | ✅ Learns from earlier wrong guesses |
-| Realistic team modeling | ❌ Flat reasoning per turn      | ✅ Strategy evolves like a teammate  |
+You can now toggle MCP ON or OFF using the "MCP: ON/OFF" button at the top of the demo.
 
----
+- **MCP ON:**
+  - See memory, deduction, and insights evolve turn-by-turn.
+  - MCP tracks history, builds reasoning, and adapts.
+- **MCP OFF:**
+  - Experience a stateless AI: no memory, no deduction, no insights.
+  - Each turn is isolated, with no context from previous moves.
 
-## 📦 Tech Stack
-
-* **React + Vite**: Lightning-fast frontend
-* **Vanilla CSS**: Clean, responsive styling
-* **State Hooks**: For timeline, memory, and logic
-* **GitHub Pages Ready**: Deploy in seconds
+This lets you instantly compare how MCP transforms multi-turn reasoning versus a traditional stateless approach.
 
 ---
 
@@ -101,6 +96,9 @@ This demo visually and interactively shows that transformation.
 npm install
 npm run dev
 ```
+
+- Open your browser to the provided local address.
+- Use the **MCP: ON/OFF** toggle at the top to switch between modes and observe the differences live.
 
 ### Deploy to GitHub Pages
 
@@ -124,11 +122,11 @@ npm run deploy
 
 This project was created to illustrate how MCP makes even games smarter — let alone real-world decision-making flows.
 
-Designed and developed by Jaydeep Shah, powered by OpenAI’s architecture and guidance.
+Designed and developed by Jaydeep Shah, powered by OpenAI's architecture and guidance.
 
 ---
 
-⚠️ Originally conceptualized as “Model Context Protocol,” this project evolved to showcase the Memory-Context Processor—but the vision behind both remains aligned: multi-turn reasoning, state tracking, and dynamic contextual intelligence.
+⚠️ Originally conceptualized as "Model Context Protocol," this project evolved to showcase the Memory-Context Processor—but the vision behind both remains aligned: multi-turn reasoning, state tracking, and dynamic contextual intelligence.
 
 
 ## 📄 License

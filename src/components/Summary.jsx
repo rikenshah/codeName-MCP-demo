@@ -1,8 +1,7 @@
 import React from 'react'
 import './Summary.css'
-import { words } from './Board'
 
-export default function Summary({ turns }) {
+export default function Summary({ turns, mcpEnabled, words }) {
     return (
         <div className="summary">
             <h2>Game Summary</h2>
@@ -19,8 +18,14 @@ export default function Summary({ turns }) {
                             <li key={index}>{words[index]}</li>
                         ))}
                     </ul>
-                    <p><strong>MCP Insight:</strong></p>
-                    <p className="insight">{turn.mcpInsight}</p>
+                    {mcpEnabled ? (
+                      <>
+                        <p><strong>MCP Insight:</strong></p>
+                        <p className="insight">{turn.mcpInsight}</p>
+                      </>
+                    ) : (
+                      <p style={{ color: '#888', fontStyle: 'italic', marginTop: 16 }}>MCP is OFF — No insight or memory. Stateless mode.</p>
+                    )}
                 </div>
             ))}
         </div>

@@ -1,15 +1,7 @@
 import React from 'react'
 import './Board.css'
 
-export const words = [
-    'Apple', 'River', 'Moon', 'Train', 'Glass',
-    'Tiger', 'Book', 'Star', 'Ocean', 'Chair',
-    'Sun', 'Mouse', 'Tree', 'Gold', 'Plane',
-    'King', 'Phone', 'Snow', 'Bridge', 'Fish',
-    'Fire', 'Ring', 'Eye', 'Cloud', 'Key'
-]
-
-export default function Board({ revealedIndices, types, highlightIndices }) {
+export default function Board({ revealedIndices, types, highlightIndices, words, gridDim = 5 }) {
     const cards = words.map((word, i) => ({
         word,
         type: types[i],
@@ -25,7 +17,7 @@ export default function Board({ revealedIndices, types, highlightIndices }) {
     }
 
     return (
-        <div className="board">
+        <div className="board" style={{ gridTemplateColumns: `repeat(${gridDim}, 1fr)` }}>
             {cards.map((card, index) => (
                 <div
                     key={index}

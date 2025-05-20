@@ -47,6 +47,20 @@
   align-items: flex-start;
   gap: 40px;
   margin-top: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+@media (max-width: 1100px) {
+  .main-layout {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-layout {
+    gap: 16px;
+  }
 }
 
 .intro-screen {
