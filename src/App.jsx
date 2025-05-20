@@ -92,7 +92,7 @@ function App() {
       <div className="intro-screen">
         <h1>Codenames x MCP</h1>
         <p>This interactive demo showcases how memory, reasoning, and deduction evolve turn-by-turn in a Codenames game—powered by MCP-like intelligence.</p>
-        <p> - Jaydeep Shah</p>
+        <p className="author"> - Jaydeep Shah</p>
         <button onClick={() => setShowIntro(false)}>Start Demo</button>
       </div>
     )
